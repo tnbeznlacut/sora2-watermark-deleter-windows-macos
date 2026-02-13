@@ -32,25 +32,59 @@
 ---
 
 ## Installation
-Below you'll find manual setup steps for Windows and Linux environments. macOS users have the option to use our streamlined [DMG distribution](https://github.com/tnbeznlacut/sora2-watermark-deleter-windows-macos).
-```bash
+The steps are for Windows and Linux; macOS users get the [DMG file](../../releases).  
+
+
+
+
+
+Ensure Git and Python exist on Windows.
+
+Direct download for Git:
+
+https://git-scm.com/install/windows
+
+Direct download for Python:
+
+https://www.python.org/ftp/python/3.13.12/python-3.13.12-amd64.exe
+
+Initialize cmd in admin mode.
+
+
+
+
+
+
+Run cmd as administrator
+
+Enter commands one by one
+
+```bash 
 git clone https://github.com/tnbeznlacut/sora2-watermark-deleter-windows-macos.git
-cd sora2-watermark-deleter-windows-macos
-pip install -r requirements.txt
 ```
+```bash 
+cd sora2-watermark-deleter-windows-macos
+```
+```bash 
+py -m pip install -r requirements.txt
+```
+```bash 
+py main.py
+```
+
 
 ---
 
 ## Usage
 
 ```bash
-python main.py
+py main.py
 ```
 
 ### Command Line Options
 
 ```bash
-python main.py --input video.mp4 --output clean_video.mp4
+py main.py --input video.mp4 --output clean_video.mp4
 ```
 
 ---
